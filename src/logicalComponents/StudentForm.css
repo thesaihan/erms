@@ -1,0 +1,27 @@
+.StudentForm #eid::placeholder,
+.StudentForm #eid::-moz-placeholder,
+.StudentForm #eid::-webkit-input-placeholder{
+    font-weight: normal;
+}
+.StudentForm{
+    padding-bottom: 0;
+}
+.StudentForm #id-label{
+    font-weight: 600;
+}
+
+.StudentForm h5 i{
+    font-size: 0.9em;
+}
+
+.StudentForm .form-group>button{
+    margin:3px 5px;
+}
+
+.StudentForm #footer-btn{
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    background-color: rgb(244, 245, 245);
+    padding:7px;
+}
