@@ -30,5 +30,8 @@ export const defaultSubjectObj = {
   dept_id: "",
   sub_pass: 50,
   sub_distinction: 70,
-  sub_excellent: 85
+  sub_excellent: 85,
+  sub_max: 100,
+  date_created: new Date(),
+  last_updated: new Date()
 };
