@@ -1,5 +1,5 @@
 export const apiProps = {
-  host: "http://localhost:8080/"
+  host: process.env.REACT_APP_HOST
 };
 
 export const defaultStudentObj = {
