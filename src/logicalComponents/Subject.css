@@ -1,0 +1,27 @@
+.Subject #eid::placeholder,
+.Subject #eid::-moz-placeholder,
+.Subject #eid::-webkit-input-placeholder{
+    font-weight: normal;
+}
+.Subject{
+    padding-bottom: 0;
+}
+.Subject #id-label{
+    font-weight: 600;
+}
+
+.Subject h5 i{
+    font-size: 0.9em;
+}
+
+.Subject .form-group>button{
+    margin:3px 5px;
+}
+
+.Subject #footer-btn{
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    background-color: rgb(244, 245, 245);
+    padding:7px;
+}
