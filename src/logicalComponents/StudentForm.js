@@ -5,7 +5,7 @@ import "./StudentForm.css";
 import { apiProps, defaultStudentObj } from "../utils/Constants";
 
 const StudentForm = props => {
-  const [student, setStudent] = useState(Object.assign({}, defaultStudentObj));
+  const [student, setStudent] = useState(defaultStudentObj());
   const [majors, setMajors] = useState([]);
 
   const getMajors = async () => {
@@ -43,7 +43,7 @@ const StudentForm = props => {
     };
     Axios.post(apiProps.host + "student/delete", param).then(res => {
       if (res.data) {
-        const newStd = Object.assign({}, defaultStudentObj);
+        const newStd = defaultStudentObj();
         setStudent(newStd);
         alert("Deleted!");
       } else alert("Delete Error");

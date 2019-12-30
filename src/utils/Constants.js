@@ -2,7 +2,7 @@ export const apiProps = {
   host: process.env.REACT_APP_HOST
 };
 
-export const defaultStudentObj = {
+export const defaultStudentObj = () => ({
   std_id: "",
   std_name: "",
   std_name_mm: "",
@@ -24,9 +24,9 @@ export const defaultStudentObj = {
   std_email: "",
   date_created: new Date().getTime(),
   last_updated: new Date().getTime()
-};
+});
 
-export const defaultSubjectObj = {
+export const defaultSubjectObj = () => ({
   sub_code: "",
   sub_name: "",
   dept_id: "",
@@ -36,4 +36,4 @@ export const defaultSubjectObj = {
   sub_max: 100,
   date_created: new Date().getTime(),
   last_updated: new Date().getTime()
-};
+});

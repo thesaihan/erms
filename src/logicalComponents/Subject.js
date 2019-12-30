@@ -5,7 +5,7 @@ import "./Subject.css";
 import { apiProps, defaultSubjectObj } from "../utils/Constants";
 
 const Subject = props => {
-  const [subject, setSubject] = useState(defaultSubjectObj);
+  const [subject, setSubject] = useState(defaultSubjectObj());
 
   const getSubject = async () => {
     if (props.code && props.code !== "new") {
