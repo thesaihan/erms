@@ -23,8 +23,7 @@ export const defaultStudentObj = {
   std_phone: "",
   std_email: "",
   date_created: new Date().getTime(),
-  last_updated: new Date().getTime(),
-  last_accessed: new Date().getTime()
+  last_updated: new Date().getTime()
 };
 
 export const defaultSubjectObj = {
@@ -36,6 +35,5 @@ export const defaultSubjectObj = {
   sub_excellent: 85,
   sub_max: 100,
   date_created: new Date().getTime(),
-  last_updated: new Date().getTime(),
-  last_accessed: new Date().getTime()
+  last_updated: new Date().getTime()
 };
