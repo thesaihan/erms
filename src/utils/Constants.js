@@ -21,7 +21,10 @@ export const defaultStudentObj = {
   std_addr_perm: "",
   std_addr_curr: "",
   std_phone: "",
-  std_email: ""
+  std_email: "",
+  date_created: new Date().getTime(),
+  last_updated: new Date().getTime(),
+  last_accessed: new Date().getTime()
 };
 
 export const defaultSubjectObj = {
@@ -32,6 +35,7 @@ export const defaultSubjectObj = {
   sub_distinction: 70,
   sub_excellent: 85,
   sub_max: 100,
-  date_created: new Date(),
-  last_updated: new Date()
+  date_created: new Date().getTime(),
+  last_updated: new Date().getTime(),
+  last_accessed: new Date().getTime()
 };
