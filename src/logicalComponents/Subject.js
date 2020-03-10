@@ -6,11 +6,13 @@ import { apiProps, defaultSubjectObj } from "../utils/Constants";
 
 const Subject = props => {
   const [subject, setSubject] = useState(defaultSubjectObj());
+  let isNew = !props.code || props.code === "new";
 
   const getSubject = async () => {
     if (props.code && props.code !== "new") {
       const res = await Axios.get(apiProps.host + `subject/code/${props.code}`);
       setSubject(res.data);
+      isNew = false;
     }
   };
 
@@ -42,7 +44,7 @@ const Subject = props => {
               </div>
 
               <div className="col-7 col-sm-4 col-md-3 col-lg-2">
-                {!subject.sub_code ? (
+                {isNew ? (
                   <input
                     type="text"
                     className="form-control fg-deeppink"
@@ -58,14 +60,14 @@ const Subject = props => {
                     readOnly
                     className="form-control-plaintext fg-deeppink"
                     id="sub_code"
-                    value={subject.sub_code}
+                    value={props.code}
                   />
                 )}
               </div>
             </div>
             <div className="form-row">
               <div className="form-group col-md-6">
-                <label htmlFor="sub_name">Subject Name</label>
+                <label htmlFor="sub_name">Subject Name :</label>
                 <input
                   type="text"
                   className="form-control"
@@ -74,6 +76,16 @@ const Subject = props => {
                   value={subject.sub_name}
                   onChange={e => onChangeSetState("sub_name", e.target.value)}
                   required
+                />
+              </div>
+            </div>
+            <div className="form-row">
+              <div className="form-group col-md-6">
+                <input
+                  type="submit"
+                  className="btn btn-info"
+                  placeholder="Mathematics"
+                  value="Save"
                 />
               </div>
             </div>
