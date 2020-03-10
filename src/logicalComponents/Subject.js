@@ -80,6 +80,52 @@ const Subject = props => {
               </div>
             </div>
             <div className="form-row">
+            <div className="form-group col-md-3">
+                <label htmlFor="sub_name">Pass :</label>
+                <input
+                  type="number"
+                  className="form-control"
+                  id="sub_pass"
+                  value={subject.sub_pass}
+                  onChange={e => onChangeSetState("sub_pass", e.target.value)}
+                  required
+                />
+              </div>
+              <div className="form-group col-md-3">
+                <label htmlFor="sub_distinction">Distinction :</label>
+                <input
+                  type="number"
+                  className="form-control"
+                  id="sub_distinction"
+                  value={subject.sub_distinction}
+                  onChange={e => onChangeSetState("sub_distinction", e.target.value)}
+                  required
+                />
+              </div>
+              <div className="form-group col-md-3">
+                <label htmlFor="sub_name">Excellent :</label>
+                <input
+                  type="number"
+                  className="form-control"
+                  id="sub_excellent"
+                  value={subject.sub_excellent}
+                  onChange={e => onChangeSetState("sub_excellent", e.target.value)}
+                  required
+                />
+              </div>
+              <div className="form-group col-md-3">
+                <label htmlFor="sub_name">Maximum :</label>
+                <input
+                  type="number"
+                  className="form-control"
+                  id="sub_max"
+                  value={subject.sub_max}
+                  onChange={e => onChangeSetState("sub_max", e.target.value)}
+                  required
+                />
+              </div>
+            </div>
+            <div className="form-row">
               <div className="form-group col-md-6">
                 <input
                   type="submit"
